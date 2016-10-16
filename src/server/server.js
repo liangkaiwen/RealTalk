@@ -13,10 +13,10 @@ var homePage = fs.readFileSync(rootDir + '/app/index.html', 'utf8');
 //req = request
 //res = response
 function handleRequest(req, res) {
-	res.writeHead(200, {"Content-Type": "text/html"});
 	info(req.url);
-
-    if (req.url.match("home")) {
+	
+    if (req.url.match("^/home$")) {
+    	res.writeHead(200, {"Content-Type": "text/html"});
     	res.end(homePage);
     }
 }

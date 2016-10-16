@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
 
-<title class= "logo" > (Real Talk Logo)
-</title>
-</head>
-<body class="tinted-image">
-<h1>Real Talk<br></h1>
-<p>An educational platform for moderated debate in a last ditch effort to eliminate bias.</p>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+		<script src="../script/script.js"></script>
 
+		<title class= "logo" > (Real Talk Logo)</title>
+	</head>
+	<body class="tinted-image">
 
-<div class="slabel">  <input id="proposition" type="search" pattern="[0-9]{0,16}" placeholder="<insert yes or no question>">  <label for="proposition">propose a topic</label></div>
-<br>
+		<h1>Real Talk</h1>
 
-<br>
-<div class="slabel">  <input id="debate" type="search" pattern="[0-9]{0,16}" placeholder="Should the US have a minimum wage?">  <label for="debate">search active debates</label></div>
+		<p>An educational platform for moderated debate in a last ditch effort to eliminate bias.</p>
 
 
 
-<p>People don't think it be like it is, but it do.</p
-<div id="cy"></div>
-</body>
+		<div class="slabel">  
+			<input id="proposition" type="search" pattern="[0-9]{0,16}" placeholder="<insert yes or no question>">  
+			<label for="proposition">propose a topic</label>
+		</div>
+
+		<br />
+
+		<div class="slabel">  
+			<input id="debate" type="search" pattern="[0-9]{0,16}" placeholder="Should the US have a minimum wage?">  
+			<label for="debate">search active debates</label>
+		</div>
+
+
+
+		<p>People don't think it be like it is, but it do.</p>
+		
+		<div id="cy"></div>
+
+	</body>
 
 </html>

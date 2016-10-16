@@ -1,0 +1,79 @@
+.slabel {
+  display: inline-block;
+  max-width: 240px;
+  position: relative;
+  width: 100%;
+  font-family: "Open Sans"; }
+
+.slabel input {
+  appearance: none;
+  border: 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-block;
+  outline: 0;
+  padding: 10px 15px;
+  transition: transform 225ms ease-in-out;
+  width: 100%;
+  background: #efefef; }
+  .slabel input:empty:valid + label {
+    color: #5C832F !important; }
+  .slabel input:valid + label {
+    color: #5C832F !important; }
+  .slabel input:invalid {
+    background: #E82C0C;
+    color: white; }
+  .slabel input:invalid + label {
+    color: white; }
+    .slabel input:invalid + label:after {
+      background: #E82C0C; }
+  .slabel input::-webkit-input-placeholder {
+    color: #B9E0D6; }
+  .slabel input::-moz-placeholder {
+    color: #B9E0D6; }
+  .slabel input:-ms-input-placeholder {
+    color: #B9E0D6; }
+  .slabel input::placeholder {
+    color: #B9E0D6; }
+  .slabel input + label {
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: transform 225ms ease-in-out;
+    width: 100%;
+    color: inherit; }
+    .slabel input + label:before, .slabel input + label:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      x-index: -1;
+      transition: transform 225ms ease-in-out; }
+    .slabel input + label:before {
+      transform: translateX(-100%); }
+    .slabel input + label:after {
+      border-radius: 4px;
+      top: 0;
+      bottom: 0;
+      background: #efefef; }
+
+.slabel input:focus:empty:valid + label {
+  color: #5C832F !important; }
+.slabel input:focus:invalid + label {
+  color: #E82C0C; }
+.slabel input:focus + label {
+  border: 0;
+  transform: translateX(-100%); }
+  .slabel input:focus + label:after {
+    transform: translateX(100%); }
+
+/*# sourceMappingURL=main.css.map */

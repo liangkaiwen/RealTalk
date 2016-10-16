@@ -1,3 +1,37 @@
+
+
+ body {background-image: url(http://images.huffingtonpost.com/2015-09-14-1442219413-4801290-Closeup_of_protesters_at_Ginowan_protests_20091108.jpg); background-origin:padding-box}
+
+
+body {
+  color: white;
+  background-color: white;
+  font: 100% Helvetica, sans-serif;
+  text-align: center;
+  background-position: center;
+  padding: 25px
+  
+}
+
+h1 {
+  color : #34675C;
+  background-color: #b3c100;
+  font: 100% Helvetica, sans-serif, 100p;
+  text-align: center;
+  border: 10px solid #e8e8e8;
+  background-position: center;
+  padding: 25px
+}
+
+p {
+  color: white;
+  font: 100% Helvetica, sans-serif;
+  text-align: center;
+  background-position: center;
+
+} 
+
+
 // Placeholder Mixin
 // ====================================
 
@@ -6,32 +40,19 @@ $pseudo-placeholder: "::-webkit-input-placeholder" "::-moz-placeholder" ":-ms-in
 @mixin placeholder {
   @each $pseudo in $pseudo-placeholder {
     @at-root #{&}#{$pseudo} {
-      @content
+      @content;
     }
   }
 }
 
-
 // Theme Config
 // ====================================
 
-$slabel-theme: (
-  border: 0,
-  radius: 4px,
-  padding: 10px 10px,
-  font: 'Open Sans',
-  bg: #FFEC5C,
-  label-bg: #FFEC5C,
-  label-color: #008DCB,
-  error-color: #E1315B,
-  placeholder-color: #E1315B,
-  success-color:#008DCB
-);
+$slabel-theme: (border: 0, radius: 4px, padding: 10px 10px, font: "Open Sans", bg: #b7b8b6, label-bg: #4cb5f3, label-color: #34675c, error-color: #E1315B, placeholder-color: #34675C, success-color: #34675c);
 
 @function slabel($key) {
   @return map-get($slabel-theme, $key);
 }
-
 
 // Required Styles
 // ====================================
@@ -70,12 +91,18 @@ $slabel-theme: (
   }
 
   &:invalid + label {
-    &:after { background: slabel(error-color); }
+    &:after {
+      background: slabel(error-color);
+    }
+
     color: white;
   }
 
-  @include placeholder { color: slabel(placeholder-color); }
-  
+  @include placeholder {
+    color: slabel(placeholder-color);
+  }
+
+
   + label {
     border: slabel(border);
     border-radius: slabel(radius);
@@ -103,7 +130,9 @@ $slabel-theme: (
       transition: transform 225ms ease-in-out;
     }
 
-    &:before { transform: translateX(-100%); }
+    &:before {
+      transform: translateX(-100%);
+    }
 
     &:after {
       border-radius: slabel(radius);
@@ -131,8 +160,4 @@ $slabel-theme: (
       transform: translateX(-100%);
     }
   }
-  
 }
-
-
-

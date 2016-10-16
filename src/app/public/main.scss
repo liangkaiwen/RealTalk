@@ -1,6 +1,17 @@
-
-
- body {background-image: url(http://images.huffingtonpost.com/2015-09-14-1442219413-4801290-Closeup_of_protesters_at_Ginowan_protests_20091108.jpg); background-origin:padding-box}
+.logo {
+  background: url(file:///Users/priyankakompella/Desktop/realTalk.png);
+}
+.tinted-image {
+  
+  background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(5, 14, 250, 0.45), 
+      rgba(80, 4, 250, 0.45)
+    ),
+    /* bottom, image */
+    url(https://az616578.vo.msecnd.net/files/responsive/cover/main/desktop/2016/01/10/635880254892802937-147520905_powerofprotest.jpg); background-repeat: no-repeat;
+}
 
 
 body {
@@ -9,26 +20,27 @@ body {
   font: 100% Helvetica, sans-serif;
   text-align: center;
   background-position: center;
-  padding: 25px
+  padding-top: 25px;
+  padding-bottom: 500px
   
 }
 
 h1 {
   color : #34675C;
-  background-color: #b3c100;
-  font: 100% Helvetica, sans-serif, 100p;
+  background-color: white;
+  font: Helvetica, sans-serif, 500pt;
   text-align: center;
   border: 10px solid #e8e8e8;
   background-position: center;
   padding: 25px
 }
 
+
 p {
   color: white;
   font: 100% Helvetica, sans-serif;
   text-align: center;
   background-position: center;
-
 } 
 
 

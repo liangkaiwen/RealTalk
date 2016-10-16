@@ -1,3 +1,41 @@
+.logo {
+  background: url(../res/realTalk.png); }
+
+.tinted-image {
+  background: linear-gradient(rgba(5, 14, 250, 0.45), rgba(80, 4, 250, 0.45)), url(../res/background_image.jpg);
+  background-repeat: no-repeat; }
+
+body {
+  color: white;
+  background-color: white;
+  font: 100% Helvetica, sans-serif;
+  text-align: center;
+  background-position: center;
+  padding-top: 25px;
+  padding-bottom: 500px; }
+
+h1 {
+  color: #34675C;
+  background-color: white;
+  font: Helvetica, sans-serif, 500pt;
+  text-align: center;
+  border: 10px solid #e8e8e8;
+  background-position: center;
+  padding: 25px; }
+
+p {
+  color: white;
+  font: 100% Helvetica, sans-serif;
+  text-align: center;
+  background-position: center; }
+
+#cy {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
 .slabel {
   display: inline-block;
   max-width: 240px;
@@ -12,29 +50,29 @@
   box-sizing: border-box;
   display: inline-block;
   outline: 0;
-  padding: 10px 15px;
+  padding: 10px 10px;
   transition: transform 225ms ease-in-out;
   width: 100%;
-  background: #efefef; }
+  background: #b7b8b6; }
   .slabel input:empty:valid + label {
-    color: #5C832F !important; }
+    color: #34675c !important; }
   .slabel input:valid + label {
-    color: #5C832F !important; }
+    color: #34675c !important; }
   .slabel input:invalid {
-    background: #E82C0C;
+    background: #E1315B;
     color: white; }
   .slabel input:invalid + label {
     color: white; }
     .slabel input:invalid + label:after {
-      background: #E82C0C; }
+      background: #E1315B; }
   .slabel input::-webkit-input-placeholder {
-    color: #B9E0D6; }
+    color: #34675C; }
   .slabel input::-moz-placeholder {
-    color: #B9E0D6; }
+    color: #34675C; }
   .slabel input:-ms-input-placeholder {
-    color: #B9E0D6; }
+    color: #34675C; }
   .slabel input::placeholder {
-    color: #B9E0D6; }
+    color: #34675C; }
   .slabel input + label {
     border: 0;
     border-radius: 4px;
@@ -42,21 +80,21 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    padding: 10px 15px;
+    overflow: scroll;
+    padding: 10px 10px;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(0);
+    transform: translateX(0);
     transition: transform 225ms ease-in-out;
     width: 100%;
-    color: inherit; }
+    color: #34675c; }
     .slabel input + label:before, .slabel input + label:after {
       content: "";
       position: absolute;
       right: 0;
       left: 0;
-      x-index: -1;
+      z-index: -1;
       transition: transform 225ms ease-in-out; }
     .slabel input + label:before {
       transform: translateX(-100%); }
@@ -64,16 +102,16 @@
       border-radius: 4px;
       top: 0;
       bottom: 0;
-      background: #efefef; }
+      background: #4cb5f3; }
 
 .slabel input:focus:empty:valid + label {
-  color: #5C832F !important; }
+  color: #34675c !important; }
 .slabel input:focus:invalid + label {
-  color: #E82C0C; }
+  color: #E1315B; }
 .slabel input:focus + label {
   border: 0;
-  transform: translateX(-100%); }
+  transform: translateX(100%); }
   .slabel input:focus + label:after {
-    transform: translateX(100%); }
+    transform: translateX(-100%); }
 
 /*# sourceMappingURL=main.css.map */
